@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="panel">
         <div class="panel-heading">
-          <h1>Calvin Lai <button class="badge badge-info" data-toggle="collapse" href="#info" aria-controls="info" aria-expanded="false" aria-label="Toggle navigation">!</button></h1>
+          <h1>Calvin Lai, <button class="badge badge-info" data-toggle="collapse" href="#info" aria-controls="info" aria-expanded="false" aria-label="Toggle navigation">!</button></h1>
           <div class="collapse" id="info">
             <h5>Welcome!</h5>
             This site was created to serve as a portfolio for my projects.
@@ -13,9 +13,22 @@
         <div class="panel-body">
           <h3>Software Developer</h3>
           <hr>
-          <h4><span class="badge badge-secondary" routerLink='projects'>projects</span></h4>
-          <h4><span class="badge badge-secondary" routerLink='contact'>contact</span></h4>
-          <h4><span class="badge badge-secondary" routerLink='about'>about</span></h4>
+          <div class="jumbotron">
+            <h1 class="display-4">Projects<i class="fas fa-project-diagram"></i></h1>
+            <p class="lead">To see my current projects, click the links below!</p>
+            <hr class="my-4">
+            <p>If you have any projects you would like done, don't hesitate to contact me!</p>
+            <div class="btn-group">
+              <a class="btn btn-primary btn-lg" routerLink="/projects" role="button">Learn more</a>
+              <a class="btn btn-primary btn-lg" href="https://github.com/clai94" role="button"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="jumbotron">
+            <h1 class="display-4">Contact me<i class="fas fa-envelope-open"></i></h1>
+            <hr>
+            <p class="lead">Click the button below to contact me.</p>
+            <a class="btn btn-primary btn-lg" routerLink="/contact" role="button">Click me</a>
+          </div>
         </div>
       </div> <!-- panel -->
     </div> <!-- col 12 -->

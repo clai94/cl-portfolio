@@ -1,3 +1,4 @@
+import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ProjectRoiComponent } from './views/project-roi/project-roi.component';
 import { HomeComponent } from './views/home/home.component';
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'project-roi', component: ProjectRoiComponent},
   { path: 'ada-artistry', component: ProjectAdaComponent},
   { path: 'projects', component: ProjectsComponent},
-  { path: 'about', component: HomeComponent},
+  { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent}
 ];
 

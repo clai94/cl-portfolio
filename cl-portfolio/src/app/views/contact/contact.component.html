@@ -10,15 +10,15 @@
             <hr>
           </div>
           <div class="panel-body">
-            <form>
+            <form action="https://formspree.io/clai-@hotmail.com" method="POST">
               <label for="name-field">Name:</label>
-              <input type="text" class="form-control" id="name-field" name="name-field" placeholder="Your name" required>
+              <input type="text" class="form-control" id="name-field" name="name" placeholder="Your name" required>
               <label for="email-field">Email:</label>
-              <input type="email" class="form-control" id="email-field" name="email-field" placeholder="Email address" required>
+              <input type="email" class="form-control" id="email-field" name="_replyto" placeholder="Email address" required>
               <label for="body-field">Message:</label>
-              <textarea id="body-field" name="body-field" class="form-control" placeholder="Type your message here" required></textarea>
+              <textarea id="body-field" name="message" class="form-control" placeholder="Type your message here" required></textarea>
               <br>
-              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              <button type="submit" value="Send" class="btn btn-primary btn-block">Submit</button>
               <br>
             </form>
           </div>

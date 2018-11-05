@@ -5,3 +5,7 @@
 .container {
   min-height: 400px;
 }
+
+.fas {
+  float: right;
+}

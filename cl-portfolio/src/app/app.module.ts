@@ -11,6 +11,8 @@ import { ProjectRoiComponent } from './views/project-roi/project-roi.component';
 import { ProjectAdaComponent } from './views/project-ada/project-ada.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { AboutComponent } from './views/about/about.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ContactComponent } from './views/contact/contact.component';
     ProjectAdaComponent,
     ProjectsComponent,
     ContactComponent,
+    AboutComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
