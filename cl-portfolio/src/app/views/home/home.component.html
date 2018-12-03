@@ -1,36 +1,64 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="panel">
-        <div class="panel-heading">
-          <h1>Calvin Lai, <button class="badge badge-info" data-toggle="collapse" href="#info" aria-controls="info" aria-expanded="false" aria-label="Toggle navigation">!</button></h1>
-          <div class="collapse" id="info">
-            <h5>Welcome!</h5>
-            This site was created to serve as a portfolio for my projects.
-            If you have any questions about any of my projects or would like to hire me or have a website built, please see my contact page!
-          </div>
-        </div>
-        <div class="panel-body">
-          <h3>Software Developer</h3>
-          <hr>
-          <div class="jumbotron">
-            <h1 class="display-4">Projects<i class="fas fa-project-diagram"></i></h1>
-            <p class="lead">To see my current projects, click the links below!</p>
-            <hr class="my-4">
-            <p>If you have any projects you would like done, don't hesitate to contact me!</p>
-            <div class="btn-group">
-              <a class="btn btn-primary btn-lg" routerLink="/projects" role="button">Learn more</a>
-              <a class="btn btn-primary btn-lg" href="https://github.com/clai94" role="button"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="jumbotron">
-            <h1 class="display-4">Contact me<i class="fas fa-envelope-open"></i></h1>
-            <hr>
-            <p class="lead">Click the button below to contact me.</p>
-            <a class="btn btn-primary btn-lg" routerLink="/contact" role="button">Click me</a>
-          </div>
-        </div>
-      </div> <!-- panel -->
-    </div> <!-- col 12 -->
-  </div> <!-- row -->
-</div> <!-- container -->
+<body>
+  <div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="../../../assets/images/avatar.jpg" alt="" /></span>
+							<h1>Calvin Lai</h1>
+							<p>Software Developer</p>
+						</header>
+
+						<hr />
+						<h2>Let's get in touch</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<select name="department" id="department">
+										<option value="">Subject</option>
+										<option value="sales">Work Request</option>
+										<option value="tech">General Question</option>
+									</select>
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+								<div class="field">
+									<label>But are you a robot?</label>
+									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><a href="#" class="button">Submit</a></li>
+							</ul>
+						</form>
+						<hr />
+
+						<footer>
+							<ul class="icons">
+                <li><a href="https://github.com/clai94/" class="fab fa-github">Twitter</a></li>
+								<li><a href="https://www.linkedin.com/in/calvin-lai-129819132/" class="fab fa-linkedin">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Calvin Lai</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+    </body>
