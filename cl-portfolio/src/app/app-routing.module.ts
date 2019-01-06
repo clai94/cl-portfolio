@@ -1,3 +1,5 @@
+import { TodolistComponent } from './views/todolist/todolist.component';
+import { TwitterComponent } from './views/twitter/twitter.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ProjectRoiComponent } from './views/project-roi/project-roi.component';
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'ada-artistry', component: ProjectAdaComponent},
   { path: 'projects', component: ProjectsComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'twitter', component: TwitterComponent},
+  { path: 'todolist', component: TodolistComponent}
 ];
 
 @NgModule({

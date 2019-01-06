@@ -13,6 +13,10 @@ import { ProjectsComponent } from './views/projects/projects.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { AboutComponent } from './views/about/about.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TwitterComponent } from './views/twitter/twitter.component';
+import { FormsModule } from '@angular/forms';
+import { TodolistComponent } from './views/todolist/todolist.component';
+import { LoginComponent } from './components/auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,15 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     ContactComponent,
     AboutComponent,
     SidebarComponent,
+    TwitterComponent,
+    TodolistComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [
     ChildrenOutletContexts
