@@ -17,6 +17,7 @@ import { TwitterComponent } from './views/twitter/twitter.component';
 import { FormsModule } from '@angular/forms';
 import { TodolistComponent } from './views/todolist/todolist.component';
 import { LoginComponent } from './components/auth/login/login.component';
+import { RegistrationComponent } from './components/auth/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LoginComponent } from './components/auth/login/login.component';
     TwitterComponent,
     TodolistComponent,
     LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

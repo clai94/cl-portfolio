@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectAdaComponent } from './views/project-ada/project-ada.component';
 import { ProjectsComponent } from './views/projects/projects.component';
+import { RegistrationComponent } from './components/auth/registration/registration.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'twitter', component: TwitterComponent},
-  { path: 'todolist', component: TodolistComponent}
+  { path: 'todolist', component: TodolistComponent},
+  { path: 'registration', component: RegistrationComponent }
 ];
 
 @NgModule({

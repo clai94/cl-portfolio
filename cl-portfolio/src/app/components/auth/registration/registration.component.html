@@ -5,27 +5,31 @@
         <div class="card">
           <div class="card-body">
               <header>
-                <span class="avatar"><img src="https://img.icons8.com/nolan/200/000000/test-passed.png" alt="clipboard"></span>
+                <span class="avatar"><img src="https://img.icons8.com/nolan/200/000000/membership-card.png" alt="register"></span>
                 <h1>To Do List</h1>
               </header>
             <hr>
           </div>
           <div class="card-body">
-            <h2>Login</h2>
+            <h2>Register</h2>
             <div class="fields">
               <label for="email">Email Address</label>
               <input [(ngModel)]="email" class="field" type="text" name="email" id="email"><br>
               <label for="password">Password</label>
               <input [(ngModel)]="password" class="field" type="password" name="password" id="pw"><br>
+              <label for="password">First Name</label>
+              <input [(ngModel)]="firstName" class="field" type="text" name="firstName" id="fname"><br>
+              <label for="password">Last Name</label>
+              <input [(ngModel)]="lastName" class="field" type="text" name="lastName" id="lname"><br>
               <ul class="actions special">
-              <li><input class="button" (click)="signIn()" value="Submit"></li>
+              <li><input class="button" (click)="signUp()" value="Register"></li>
               <li><input class="button" type="reset" value="Reset"></li>
               </ul>
             </div>
             <hr>
-            <h2>Need an account?</h2>
+            <h2>Already have an account?</h2>
             <ul class="actions special">
-                <li><input routerLink="/registration" class="button" type="submit" value="Register"></li>
+                <li><input routerLink="/todolist" class="button" type="submit" value="Login"></li>
             </ul>
             <hr>
             <h2>Need help?</h2>
