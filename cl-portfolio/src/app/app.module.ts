@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { TodolistComponent } from './views/todolist/todolist.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegistrationComponent } from './components/auth/registration/registration.component';
+import { TodolistHomeComponent } from './views/todolist-home/todolist-home.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { RegistrationComponent } from './components/auth/registration/registrati
     TodolistComponent,
     LoginComponent,
     RegistrationComponent,
+    TodolistHomeComponent,
   ],
   imports: [
     BrowserModule,

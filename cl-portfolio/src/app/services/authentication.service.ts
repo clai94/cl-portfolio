@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AuthenticationDetails, CognitoUser, CognitoUserPool } from 'amazon-cognito-identity-js';
 import { Injectable } from '@angular/core';
 
@@ -14,7 +15,7 @@ const userPool = new CognitoUserPool(poolData);
 export class AuthenticationService {
   cognitoUser: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   register(email: string, password: string, givenName: string, familyName: string) {
     const attributeList = [];
@@ -60,15 +61,20 @@ export class AuthenticationService {
     cognitoUser.authenticateUser(authDetails, {
       onSuccess: function(result) {
         const accessToken = result.getAccessToken().getJwtToken();
+        const refreshToken = result.getRefreshToken().getToken();
         console.log(accessToken);
+        localStorage.setItem('accessToken', accessToken);
+        localStorage.setItem('refreshToken', refreshToken);
         return(accessToken);
-
       },
       onFailure: function(err) {
         alert(err.message || JSON.stringify(err));
         return(err.message);
       }
     });
+    if (localStorage.getItem('accessToken') !== undefined) {
+      this.router.navigate(['/todolist-home']);
+    }
   }
 
 }

@@ -1,3 +1,4 @@
+import { TodolistHomeComponent } from './views/todolist-home/todolist-home.component';
 import { TodolistComponent } from './views/todolist/todolist.component';
 import { TwitterComponent } from './views/twitter/twitter.component';
 import { AboutComponent } from './views/about/about.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'twitter', component: TwitterComponent},
   { path: 'todolist', component: TodolistComponent},
-  { path: 'registration', component: RegistrationComponent }
+  { path: 'registration', component: RegistrationComponent},
+  { path: 'todolist-home', component: TodolistHomeComponent},
 ];
 
 @NgModule({
